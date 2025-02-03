@@ -1,0 +1,17 @@
+ {% extends "base.html" %} 
+
+    {% block content%}
+    <h1>home movies</h1>
+    {% if movies %}
+
+    <ul>
+        {% for movie in movies %}
+         <li>{{movie}}</li>
+        {% endfor %}
+    </ul>
+
+    {% else %}
+    <p> there is no movies</p>
+    {% endif %}
+    {% endblock%}
+
