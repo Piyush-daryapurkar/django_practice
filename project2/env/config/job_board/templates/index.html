@@ -1,0 +1,19 @@
+ {% extends "nav.html" %}
+{% load static %}
+
+{% block content %}
+ 
+{% for i in job_posting  %}
+<a href="{% url 'job-detail' i.pk %}">
+<div class="index-main">
+    <p>title: {{ i.title}}</p>
+    <p>description: {{ i.description}}</p>
+    <p>company: {{ i.company}}</p>
+    <p> salary: ${{ i.salary}}</p>
+    <button>view details</button>
+</div>
+
+</a>
+{% endfor %}
+
+{% endblock content %}

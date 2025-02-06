@@ -1,0 +1,19 @@
+{% extends "nav.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+<ul>
+    <button><a href="{% url "home" %}">go back</a></button>
+    <li>{{ posting.title}}</li>
+    <li>{{ posting.description}}</li>
+    <li>{{ posting.company}}</li>
+    <li>${{ posting.salary}}</li>
+    <li>{{ posting.is_active}}</li>
+    <hr></hr>
+   
+</ul>
+
+{% endblock content%}
