@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static "style.css" %} ">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-main">
+        <div class="logo">
+            <h1>LinKing.Com</h1>
+        </div>
+        <button>add-links</button>
+    </div> 
+    <div class="home-main">
+        {% block content %}
+        
+        {% endblock content %}
+    </div>   
+</body>
+</html>

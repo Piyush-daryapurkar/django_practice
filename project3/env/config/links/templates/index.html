@@ -1,0 +1,26 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block content %}
+ 
+
+<div class="home-box">
+    {% for i in links %}
+    <div class="home-box">
+        <div class="left">
+            <h3>{{ i.name }}</h3>
+            <p><a href="{{ i.url }}" target="_blank">{{ i.url }}</a></p>
+        </div>
+        <div class="right">
+            <span class="clicks-badge">Clicks: {{ i.clicks }}</span>
+            {% comment %} <a target="_blank" href="{% url 'root-link' link.slug %}" class="link-btn">Open /{{ i.slug }} →</a> {% endcomment %}
+            <a target="_blank" href="{% if i.slug %}{% url 'root-link' i.slug %}{% else %}# {% endif %}" class="link-btn">Open /{{ i.slug }} →</a>
+
+        </div>
+    </div>
+    
+    {% endfor %}
+</div>
+ 
+ {% endblock content %}
+
+
