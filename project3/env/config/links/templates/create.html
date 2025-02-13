@@ -1,17 +1,10 @@
-{% comment %} {% extends "nav.html" %}
-{% load static %}
+{% extends "nav.html" %}
 {% block content %}
-<form action="" method="POST">
-    {% csrf_token %}
-    {{ form }} 
-    <input type="text" name="link">
-    <input type="text" name="link">
-
-    <input type="text" name="link">
-
-    <input type="text" name="link">
-
-    
-    <input type="submit" value="Create">
-</form>
-{% endblock content %} {% endcomment %}
+<div class="create-link">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}     
+        <input type="submit" value="Create">
+    </form> 
+</div>
+{% endblock content %}

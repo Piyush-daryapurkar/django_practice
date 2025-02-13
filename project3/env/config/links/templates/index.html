@@ -11,7 +11,6 @@
         </div>
         <div class="right">
             <span class="clicks-badge">Clicks: {{ i.clicks }}</span>
-            {% comment %} <a target="_blank" href="{% url 'root-link' link.slug %}" class="link-btn">Open /{{ i.slug }} →</a> {% endcomment %}
             <a target="_blank" href="{% if i.slug %}{% url 'root-link' i.slug %}{% else %}# {% endif %}" class="link-btn">Open /{{ i.slug }} →</a>
 
         </div>

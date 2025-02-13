@@ -94,3 +94,38 @@ h2 {
 .link-btn:hover {
     color: #2563eb;
 }
+
+
+/* create css */
+.create-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centering the form vertically */
+    background-color: #f4f4f4;
+}
+
+.create-link form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-link form input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.create-link form input[type="submit"]:hover {
+    background: #0056b3;
+}
