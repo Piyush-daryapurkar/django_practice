@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import index,root_link,add_link
+from .views import index,root_link
 
 urlpatterns = [
     path('', index, name='index'),  # Added name parameter
     path('<str:link_slug>/', root_link, name='root-link'),
-    path('link/create',add_link,name='add-link')
+    # path('link/create',add_link,name='create-link')
 ]
