@@ -29,6 +29,7 @@ button {
     color: #3b82f6;
     border: none;
     cursor: pointer;
+    margin-left: 400px;
     border-radius: 6px;
     transition: background 0.3s ease;
 }
